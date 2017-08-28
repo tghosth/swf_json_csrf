@@ -1,5 +1,5 @@
 ## Purpose
-This repository was created to simplify the SWF-based JSON CSRF exploitation (in the future commits i will also add custom Content-Type header support, so you should be able to send other data types, like XML).
+This repository was created to simplify the SWF-based JSON CSRF exploitation. It should work also with XML data using optional parameters.
 
 ## Instructions
 The .swf file take 4 parameters:
