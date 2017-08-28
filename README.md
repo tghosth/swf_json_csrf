@@ -2,7 +2,7 @@
 This repository was created to simplify the SWF-based JSON CSRF exploitation (in the future commits i will also add custom Content-Type header support, so you should be able to send other data types, like XML).
 
 ## Instructions
-The .swf file take 3 parameters:
+The .swf file take 4 parameters:
 1) **jsonData** - apparently, JSON Data:)
 2) **php_url** - URL of the 307 redirector php file.
 3) **endpoint** - target endpoint, which is vulnerable to CSRF.
