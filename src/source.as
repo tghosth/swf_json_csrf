@@ -18,8 +18,17 @@ package
 			myJson = this.root.loaderInfo.parameters.jsonData;
 			var url: String = this.root.loaderInfo.parameters.php_url;
 			var endpoint: String = this.root.loaderInfo.parameters.endpoint;
+			var ct: String;
+			if (this.root.loaderInfo.parameters.ct) 
+			{ 
+			ct=this.root.loaderInfo.parameters.ct; 
+			} 
+			else 
+			{ 
+			ct="application/json";
+			}
 			var request: URLRequest = new URLRequest(url + "?endpoint=" + endpoint);
-			request.requestHeaders.push(new URLRequestHeader("Content-Type", "application/json"));
+			request.requestHeaders.push(new URLRequestHeader("Content-Type", ct));
 			request.data = myJson;
 			request.method = URLRequestMethod.POST;
 			var urlLoader: URLLoader = new URLLoader();
