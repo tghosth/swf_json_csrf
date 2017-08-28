@@ -6,6 +6,7 @@ The .swf file take 3 parameters:
 1) **jsonData** - apparently, JSON Data:)
 2) **php_url** - URL of the 307 redirector php file.
 3) **endpoint** - target endpoint, which is vulnerable to CSRF.
+4) **ct** (optional) - specify your own Content-Type. Without this parameter it will be `application/json`
 
 Place test.swf, test.php and crossdomain.xml on your host, then simply call the SWF file with the correct parameters.
 
