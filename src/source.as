@@ -13,20 +13,10 @@ package
 
 		public function re() 
 		{
-			var member1: Object = null;
-			var myJson: String = null;
-			myJson = this.root.loaderInfo.parameters.jsonData;
+			var myJson: String = this.root.loaderInfo.parameters.jsonData;
 			var url: String = this.root.loaderInfo.parameters.php_url;
 			var endpoint: String = this.root.loaderInfo.parameters.endpoint;
-			var ct: String;
-			if (this.root.loaderInfo.parameters.ct) 
-			{ 
-			ct=this.root.loaderInfo.parameters.ct; 
-			} 
-			else 
-			{ 
-			ct="application/json";
-			}
+			var ct: String = (this.root.loaderInfo.parameters.ct)?this.root.loaderInfo.parameters.ct:"application/json";
 			var request: URLRequest = new URLRequest(url + "?endpoint=" + endpoint);
 			request.requestHeaders.push(new URLRequestHeader("Content-Type", ct));
 			request.data = myJson;
