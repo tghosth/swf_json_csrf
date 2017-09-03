@@ -13,6 +13,7 @@ Place test.swf, test.php and crossdomain.xml on your host, then simply call the 
 Example call:
 https://yourhost.com/test.swf?jsonData={"test":1}&php_url=https://yourhost.com/test.php&endpoint=https://targethost.com/endpoint
 
+If you have the questions regarding this repository - ping me in the Twitter: https://twitter.com/h1_sp1d3r
 
 ## Thanks
 Special thanks to the https://twitter.com/emgeekboy, who inspired me to make this repository.
