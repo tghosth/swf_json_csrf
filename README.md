@@ -22,4 +22,9 @@ Related blog posts about this:
 * http://research.rootme.in/forging-content-type-header-with-flash/
 * http://resources.infosecinstitute.com/bypassing-csrf-protections-fun-profit/#gref
 
+
+## Disclaimer
+This repository is made for educational and ethical testing purposes only. Usage for attacking targets without prior mutual consent is illegal.
+By using this testing tool you accept the fact that any damage (dataloss, system compromise, etc.) caused by the use of this tool is your responsibility.
+
 ## Commits, PRs and bug reports are welcome!
