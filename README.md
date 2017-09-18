@@ -29,10 +29,15 @@ By using this testing tool you accept the fact that any damage (dataleak, system
 
 ## FAQ
 1. Can we read response from server?
-Answer: no. Because of SOP. Still, if crossdomain.xml on the target host exists, and misconfigured - in this case yes. In this case you even don't need a 307 redirect.
+
+ Answer: no. Because of SOP. Still, if crossdomain.xml on the target host exists, and misconfigured - in this case yes. In this case you even don't need a 307 redirect.
+ 
 2. Does it work with requests other than GET/POST?
-Answer: no.
+
+ Answer: no.
+ 
 3. Does it possible to craft custom headers like X-Requested-With, Origin or Referrer?
-Answer: no. Still, if you will find other bug, for example, CRLF Injection, you can chain it with this CSRF trick.
+
+ Answer: no. Still, if you will find other bug, for example, CRLF Injection, you can chain it with this CSRF trick.
 
 ## Commits, PRs and bug reports are welcome!
