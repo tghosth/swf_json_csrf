@@ -30,7 +30,7 @@ By using this testing tool you accept the fact that any damage (dataleak, system
 ## FAQ
 1. Can we read response from server?
 
- Answer: no. Because of SOP. Still, if crossdomain.xml on the target host exists, and misconfigured - in this case yes. In this case you even don't need a 307 redirect.
+ Answer: no. Because of SOP. Still, if crossdomain.xml on the target host exist, and misconfigured - in this case yes. In this case you even don't need a 307 redirect.
  
 2. Does it work with requests other than GET/POST?
 
