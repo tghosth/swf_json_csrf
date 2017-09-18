@@ -38,6 +38,6 @@ By using this testing tool you accept the fact that any damage (dataleak, system
  
 3. Does it possible to craft custom headers like X-Requested-With, Origin or Referrer?
 
- Answer: no. Still, if you will find other bug, for example, CRLF Injection, you can chain it with this CSRF trick.
+ Answer: no (it was possible in the past, but not now). Still, if you will find other bug, for example, CRLF Injection, you can chain it with this CSRF trick.
 
 ## Commits, PRs and bug reports are welcome!
