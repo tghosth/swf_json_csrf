@@ -27,4 +27,12 @@ Related blog posts about this:
 This repository is made for educational and ethical testing purposes only. Usage for attacking targets without prior mutual consent is illegal.
 By using this testing tool you accept the fact that any damage (dataleak, system compromise, etc.) caused by the use of this tool is your responsibility.
 
+## FAQ
+1. Can we read response from server?
+Answer: no. Because of SOP. Still, if crossdomain.xml on the target host exists, and misconfigured - in this case yes. In this case you even don't need a 307 redirect.
+2. Does it work with requests other than GET/POST?
+Answer: no.
+3. Does it possible to craft custom headers like X-Requested-With, Origin or Referrer?
+Answer: no. Still, if you will find other bug, for example, CRLF Injection, you can chain it with this CSRF trick.
+
 ## Commits, PRs and bug reports are welcome!
