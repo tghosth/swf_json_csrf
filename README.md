@@ -13,7 +13,12 @@ Place test.swf and test.php on your host, then simply call the SWF file with the
 **(As mentioned by [@ziyaxanalbeniz](https://twitter.com/ziyaxanalbeniz)) - we actually don't need crossdomain.xml from this repo, if test.php and test.swf are on same domain). Place it on your host if you also testing locally or across different domains.**
 
 Example call:
-https://yourhost.com/test.swf?jsonData={"test":1}&php_url=https://yourhost.com/test.php&endpoint=https://targethost.com/endpoint
+```
+http[s]://[yourhost-and-path]/test.swf?jsonData=[yourJSON]&php_url=http[s]://[yourhost-and-path]/test.php&endpoint=http[s]://[targethost-and-endpoint]
+```
+e.g.
+https://example.com/test.swf?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
+
 
 If you have the questions regarding this repository - ping me in the Twitter: [@h1_sp1d3r](https://twitter.com/h1_sp1d3r)
 
