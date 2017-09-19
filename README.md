@@ -10,15 +10,15 @@ The .swf file take 4 parameters:
 
 Place test.swf and test.php on your host, then simply call the SWF file with the correct parameters.
 
-**(As mentioned by https://twitter.com/ziyaxanalbeniz) - we actually don't need crossdomain.xml from this repo, if test.php and test.swf are on same domain). Place it on your host if you also testing locally or across different domains.**
+**(As mentioned by [@ziyaxanalbeniz](https://twitter.com/ziyaxanalbeniz)) - we actually don't need crossdomain.xml from this repo, if test.php and test.swf are on same domain). Place it on your host if you also testing locally or across different domains.**
 
 Example call:
 https://yourhost.com/test.swf?jsonData={"test":1}&php_url=https://yourhost.com/test.php&endpoint=https://targethost.com/endpoint
 
-If you have the questions regarding this repository - ping me in the Twitter: https://twitter.com/h1_sp1d3r
+If you have the questions regarding this repository - ping me in the Twitter: [@h1_sp1d3r](https://twitter.com/h1_sp1d3r)
 
 ## Thanks
-Special thanks to the https://twitter.com/emgeekboy, who inspired me to make this repository.
+Special thanks to the [@emgeekboy](https://twitter.com/emgeekboy), who inspired me to make this repository.
 Related blog posts about this: 
 * http://www.geekboy.ninja/blog/exploiting-json-cross-site-request-forgery-csrf-using-flash/
 * http://research.rootme.in/forging-content-type-header-with-flash/
