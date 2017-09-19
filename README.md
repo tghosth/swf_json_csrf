@@ -9,6 +9,7 @@ The .swf file take 4 parameters:
 4) **ct** (optional) - specify your own Content-Type. Without this parameter it will be `application/json`
 
 Place test.swf, test.php and crossdomain.xml on your host, then simply call the SWF file with the correct parameters.
+(As mentioned by (https://twitter.com/ziyaxanalbeniz)[@ziyaxanalbeniz] - we don't need crossdomain.xml, if test.php and test.swf are on same host).
 
 Example call:
 https://yourhost.com/test.swf?jsonData={"test":1}&php_url=https://yourhost.com/test.php&endpoint=https://targethost.com/endpoint
