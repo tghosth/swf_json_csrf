@@ -10,7 +10,7 @@ The .swf file take 4 parameters:
 
 Place test.swf and test.php on your host, then simply call the SWF file with the correct parameters.
 
-(As mentioned by https://twitter.com/ziyaxanalbeniz) - we actually don't need crossdomain.xml from this repo, if test.php and test.swf are on same host).
+(As mentioned by https://twitter.com/ziyaxanalbeniz) - we actually don't need crossdomain.xml from this repo, if test.php and test.swf are on same domain - i missed it).
 Place it on your host if you also testing locally/cross-site.
 
 Example call:
