@@ -48,7 +48,7 @@ By using this testing tool you accept the fact that any damage (dataleak, system
  Answer: no (it was possible in the past, but not now).
 
 ## Update
-Starting with Chrome 62, direct link to SWF file may not work. If this behavior happens, use custom HTML page with
+Starting with Chrome 62, direct link to SWF file may not work. If this behavior happens, use custom HTML page with this, or any other embedding method:
 ```
 <embed src='path_to_swf'></embed>
 ```
