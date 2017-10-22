@@ -27,7 +27,7 @@ If you have the questions regarding this repository - ping me in the Twitter: [@
 
 
 | *&               |Methods        | GET      | POST  | PUT  |DELETE |
-| Browsers         |               | Are      | Cool  |      |       |
+| Browsers         |               |          |       |      |       |
 | -------------    |:-------------:| -----:   |-----: |----: |----:  | 
 | Chrome 61.0      |               |          |       |      |       | 
 | Firefox 52.0.1   |               |          |       |      |       |
