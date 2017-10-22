@@ -26,13 +26,7 @@ If you have the questions regarding this repository - ping me in the Twitter: [@
 
 This project is tested on following browsers as follows:
 
-| *&               |Methods        | GET      | POST  | PUT  |DELETE |
-| Browsers         |               |          |       |      |       |
-| -------------    |:-------------:| -----:   |-----: |----: |----:  | 
-| Chrome 61.0      |               |  ✓       |  ✓    |   X  |X      | 
-| Firefox 52.0.1   |               |  ✓       |  ✓    |   X  |X      | 
-| Opera 47.0       |               |  ✓       |  ✓    |   X  |X      | 
-| Safari 11.0      |               |  ✓       |  ✓    |   X  |X      | 
+![1x](https://user-images.githubusercontent.com/24297694/31861974-dd74a5ce-b73e-11e7-8546-49e1fa29e991.JPG)
 
 Notes: ✓ - Works, X - doesn't work
 
