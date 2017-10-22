@@ -8,10 +8,10 @@ package
 	import flash.net.URLRequestHeader;
 	import flash.net.URLRequestMethod;
 
-	public class re extends Sprite 
+	public class source extends Sprite 
 	{
 
-		public function re() 
+		public function source() 
 		{
 			var myJson: String = this.root.loaderInfo.parameters.jsonData;
 			var url: String = this.root.loaderInfo.parameters.php_url;
@@ -19,8 +19,8 @@ package
 			var ct: String = (this.root.loaderInfo.parameters.ct)?this.root.loaderInfo.parameters.ct:"application/json";
 			var request: URLRequest = new URLRequest(url + "?endpoint=" + endpoint);
 			request.requestHeaders.push(new URLRequestHeader("Content-Type", ct));
-			request.data = myJson;
-			request.method = URLRequestMethod.POST;
+			request.data = (this.root.loaderInfo.parameters.reqmethod=="GET")?"":myJson;
+			request.method = (this.root.loaderInfo.parameters.reqmethod)?this.root.loaderInfo.parameters.reqmethod:URLRequestMethod.POST;
 			var urlLoader: URLLoader = new URLLoader();
 			try 
 			{
