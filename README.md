@@ -24,17 +24,22 @@ If you have the questions regarding this repository - ping me in the Twitter: [@
 
 ## Cross Browser Testing
 
-
+This project is tested on following browsers as follows:
 
 | *&               |Methods        | GET      | POST  | PUT  |DELETE |
 | Browsers         |               |          |       |      |       |
 | -------------    |:-------------:| -----:   |-----: |----: |----:  | 
-| Chrome 61.0      |               |          |       |      |       | 
-| Firefox 52.0.1   |               |          |       |      |       |
-| Opera 47.0       |               |          |       |      |       |
-| Safari 11.0      |               |          |       |      |       |
+| Chrome 61.0      |               |  ✓       |  ✓    |   X  |X      | 
+| Firefox 52.0.1   |               |  ✓       |  ✓    |   X  |X      | 
+| Opera 47.0       |               |  ✓       |  ✓    |   X  |X      | 
+| Safari 11.0      |               |  ✓       |  ✓    |   X  |X      | 
 
+Notes: ✓ - Works, X - doesn't work
 
+If direct link to flash file doesn't work try embedding as follows:
+```
+<embed src='path_to_swf'></embed>
+```
 
 
 
