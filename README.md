@@ -22,6 +22,22 @@ https://example.com/test.swf?jsonData={"test":1}&php_url=https://example.com/tes
 
 If you have the questions regarding this repository - ping me in the Twitter: [@h1_sp1d3r](https://twitter.com/h1_sp1d3r)
 
+## Cross Browser Testing
+
+
+
+| *&               |Methods        | GET      | POST  | PUT  |DELETE |
+| Browsers         |               | Are      | Cool  |      |       |
+| -------------    |:-------------:| -----:   |-----: |----: |----:  | 
+| Chrome 61.0      |               |          |       |      |       | 
+| Firefox 52.0.1   |               |          |       |      |       |
+| Opera 47.0       |               |          |       |      |       |
+| Safari 11.0      |               |          |       |      |       |
+
+
+
+
+
 ## Thanks
 Special thanks to the [@emgeekboy](https://twitter.com/emgeekboy), who inspired me to make this repository.
 Related blog posts about this: 
