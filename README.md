@@ -7,6 +7,7 @@ The .swf file take 4 parameters:
 2) **php_url** - URL of the 307 redirector php file.
 3) **endpoint** - target endpoint, which is vulnerable to CSRF.
 4) **ct** (optional) - specify your own Content-Type. Without this parameter it will be `application/json`
+4) **reqmethod** (optional) - specify your own request method. Without this parameter it will be `POST`
 
 Place test.swf and test.php on your host, then simply call the SWF file with the correct parameters.
 
@@ -38,7 +39,7 @@ If direct link to flash file doesn't work try embedding as follows:
 
 
 ## Thanks
-Special thanks to the [@emgeekboy](https://twitter.com/emgeekboy), who inspired me to make this repository.
+Special thanks to the [@emgeekboy](https://twitter.com/emgeekboy), who inspired me to make this repository, and [@hivarekarpranav](https://twitter.com/hivarekarpranav), who did the cross-browser and request methods research.
 Related blog posts about this: 
 * http://www.geekboy.ninja/blog/exploiting-json-cross-site-request-forgery-csrf-using-flash/
 * http://research.rootme.in/forging-content-type-header-with-flash/
