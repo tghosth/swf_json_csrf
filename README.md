@@ -42,7 +42,7 @@ https://example.com/read.html?jsonData=&endpoint=https://sometargethost.com/endp
 ```
 4) Exploit insecure crossdomain.xml (read data from target), POST-based, any content-type supported:
 ```
-https://example.com/read.html?jsonData=somedata&endpoint=https://sometargethost.com/endpoint&&ct=text/html
+https://example.com/read.html?jsonData=somedata&endpoint=https://sometargethost.com/endpoint&ct=text/html
 ```
 
 ## Cross Browser Testing
