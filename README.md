@@ -9,7 +9,7 @@ This repository was created to simplify the SWF-based JSON CSRF exploitation. It
 The .swf file take 3 required and 2 optional parameters:
 1) **jsonData** - apparently, JSON Data:) Can be other type of data, if optional `ct` param specified. Can be empty
 2) **php_url** - URL of the 307 redirector php file. Can be empty (in this case SWF will request endpoint without 307 redirect - and likely will fail, if crossdomain.xml is secure, or not exist)
-3) **endpoint** - target endpoint, which is vulnerable to CSRF, or, if you're exploiting insecure crossdomain XML, URL which response you want to read.
+3) **endpoint** - target endpoint, which is vulnerable to CSRF, or, if you're exploiting insecure crossdomain.xml, URL which response you want to read.
 4) **ct** (optional) - specify your own Content-Type. Without this parameter it will be `application/json`
 5) **reqmethod** (optional) - specify your own request method. Without this parameter it will be `POST`
 
