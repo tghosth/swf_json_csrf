@@ -86,6 +86,7 @@ By using this testing tool you accept the fact that any damage (dataleak, system
 
 ## Update
 Starting with Chrome 62, direct link to SWF file may not work. If this behavior happens, use HTML wrapper.
+
 01.01.2018 - added HTML wrapper (`read.html`, should be used with `test.swf`) for better experience with Chrome. Usage and parameters are same as in case with test.swf. It supports also insecure crossdomain.xml exploitation (able to show the response from the target endpoint).
 
 ## Commits, PRs and bug reports are welcome!
