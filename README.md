@@ -64,6 +64,7 @@ Related blog posts about this:
 * http://www.geekboy.ninja/blog/exploiting-json-cross-site-request-forgery-csrf-using-flash/
 * http://research.rootme.in/forging-content-type-header-with-flash/
 * http://resources.infosecinstitute.com/bypassing-csrf-protections-fun-profit/#gref
+* https://medium.com/@know.0nix/bypassing-crossdomain-policy-and-hit-hundreds-of-top-alexa-sites-af1944f6bbf5 - thanks to the [@knowledge_2014](https://twitter.com/knowledge_2014), who inspired me to implement the response reading component
 
 
 ## Disclaimer
