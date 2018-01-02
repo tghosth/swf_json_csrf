@@ -57,12 +57,6 @@ This project is tested on following browsers as follows:
 
 Notes: ✓ - Works, X - doesn't work
 
-If direct link to flash file doesn't work try embedding as follows:
-```
-<embed src='path_to_swf'></embed>
-```
-
-
 
 ## Thanks
 Special thanks to the [@emgeekboy](https://twitter.com/emgeekboy), who inspired me to make this repository, and [@hivarekarpranav](https://twitter.com/hivarekarpranav), who did the cross-browser and request methods research.
