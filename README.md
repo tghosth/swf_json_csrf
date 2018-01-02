@@ -1,6 +1,10 @@
 ## Purpose
 This repository was created to simplify the SWF-based JSON CSRF exploitation. It should work also with XML (and any other) data using optional parameters. Also it can be used for easy exploitation of crossdomain.xml misconfiguration (no need to compile .swf for each case).
 
+## Variations of target configuration
+1) Target site has no crossdomain.xml, or secure crossdomain.xml, not allowing domains you can control. In this case you can't get the response from target site, but still can conduct CSRF attacks with arbitrary Content-Type header, if CSRF protection relies only on the content-type (e.g. checking it for being specific type). In this case usage of 307 redirect is required, to bypass crossdomain.xml (it will be requested only after the csrf will take place).
+2) Target site has misconfigured crossdomain.xml, allowing domains you can control. In this case you can conduct both CSRF and response reading attacks. Usage of 307 redirect is not required.
+
 ## Instructions
 The .swf file take 3 required and 2 optional parameters:
 1) **jsonData** - apparently, JSON Data:) Can be other type of data, if optional `ct` param specified. Can be empty
@@ -8,10 +12,6 @@ The .swf file take 3 required and 2 optional parameters:
 3) **endpoint** - target endpoint, which is vulnerable to CSRF, or, if you're exploiting insecure crossdomain XML, URL which response you want to read.
 4) **ct** (optional) - specify your own Content-Type. Without this parameter it will be `application/json`
 5) **reqmethod** (optional) - specify your own request method. Without this parameter it will be `POST`
-
-## Variations of target configuration
-1) Target site has no crossdomain.xml, or secure crossdomain.xml, not allowing domains you can control. In this case you can't get the response from target site, but still can conduct CSRF attacks with arbitrary Content-Type header, if CSRF protection relies only on the content-type (e.g. checking it for being specific type). In this case usage of 307 redirect is required, to bypass crossdomain.xml (it will be requested only after the csrf will take place).
-2) Target site has misconfigured crossdomain.xml, allowing domains you can control. In this case you can conduct both CSRF and response reading attacks. Usage of 307 redirect is not required.
 
 Place test.swf and test.php on your host, then simply call the SWF file with the correct parameters.
 
