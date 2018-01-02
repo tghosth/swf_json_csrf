@@ -23,6 +23,7 @@ https://example.com/test.swf?jsonData={"test":1}&php_url=https://example.com/tes
 Using HTML wrapper (read.html), parameters are same:
 https://example.com/read.html?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
 In case your target has crossdomain.xml misconfigured, or allowing your domain, you will also get the response using this wrapper. In this case you can use wrapper without 307 redirect (no need of `php_url` parameter).
+This is useful for Chrome >=62, where you can't access SWF directly, or if you want to exploit insecure crossdomain.xml.
 
 If you have the questions regarding this repository - ping me in the Twitter: [@h1_sp1d3r](https://twitter.com/h1_sp1d3r)
 
