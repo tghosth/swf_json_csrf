@@ -10,7 +10,7 @@ var c = url.searchParams.get("ct")?url.searchParams.get("ct"):"";
 var d = url.searchParams.get("jsonData")?url.searchParams.get("jsonData"):"";
 var p = url.searchParams.get("php_url")?url.searchParams.get("php_url"):"";
 var obj = document.createElement("embed");
-obj.src="source.swf?endpoint="+e+"&reqmethod="+r+"&ct="+c+"&jsonData="+d+"&php_url="+p;
+obj.src="test.swf?endpoint="+e+"&reqmethod="+r+"&ct="+c+"&jsonData="+d+"&php_url="+p;
 document.body.append(obj);
 function process(data)
 {
