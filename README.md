@@ -59,7 +59,7 @@ Notes: ✓ - Works, X - doesn't work
 
 
 ## Thanks
-Special thanks to the [@emgeekboy](https://twitter.com/emgeekboy), who inspired me to make this repository, and [@hivarekarpranav](https://twitter.com/hivarekarpranav), who did the cross-browser and request methods research.
+Special thanks to the [@emgeekboy](https://twitter.com/emgeekboy), who inspired me to make this repository and most functionality, and [@hivarekarpranav](https://twitter.com/hivarekarpranav), who did the cross-browser and request methods research.
 Related blog posts about this: 
 * http://www.geekboy.ninja/blog/exploiting-json-cross-site-request-forgery-csrf-using-flash/
 * http://research.rootme.in/forging-content-type-header-with-flash/
