@@ -69,7 +69,9 @@
 <script>
 $(function() {
 $( "#exec" ).click(function() {
-  //get URL and read parameters
+//remove all created elements from previous requests
+$( "embed" ).remove();
+//get URL and read parameters
 var url = new URL(window.location.href);
 var e = document.getElementById("endpoint").value;
 var r = document.getElementById("reqm").value;
