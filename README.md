@@ -57,7 +57,7 @@ Starting with Chrome 62, direct link to SWF file may not work. If this behavior 
 
 **25.03.2018** - added UI wrapper for better experience (`ui.html` + assets folder)
 
-![ui](https://user-images.githubusercontent.com/24297694/37877745-38c6836e-3068-11e8-86c1-fad3dea7ff49.JPG)
+![ui](https://user-images.githubusercontent.com/24297694/37878674-5c3af75a-3075-11e8-80d6-66e2dd4dee6f.JPG)
 
 ## Cross Browser Testing
 
