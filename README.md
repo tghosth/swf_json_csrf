@@ -90,4 +90,7 @@ Starting with Chrome 62, direct link to SWF file may not work. If this behavior 
 
 01.01.2018 - added HTML wrapper (`read.html`, should be used with `test.swf`) for better experience with Chrome. Usage and parameters are same as in case with test.swf. It supports also insecure crossdomain.xml exploitation (able to show the response from the target endpoint).
 
+25.03.2018 - added UI wrapper for better experience (ui.html + assets folder)
+![ui](https://user-images.githubusercontent.com/24297694/37877745-38c6836e-3068-11e8-86c1-fad3dea7ff49.JPG)
+
 ## Commits, PRs and bug reports are welcome!
