@@ -59,6 +59,8 @@ Starting with Chrome 62, direct link to SWF file may not work. If this behavior 
 
 ![ui](https://user-images.githubusercontent.com/24297694/37878674-5c3af75a-3075-11e8-80d6-66e2dd4dee6f.JPG)
 
+**July 2018** - Fixed in the Firefox: https://www.mozilla.org/en-US/security/advisories/mfsa2018-15/#CVE-2018-12364
+
 ## Cross Browser Testing
 
 This project is tested on following browsers as follows:
