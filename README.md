@@ -25,7 +25,9 @@ http[s]://[yourhost-and-path]/test.swf?jsonData=[yourJSON]&php_url=http[s]://[yo
 e.g.
 https://example.com/test.swf?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
 
-### Preferred way - less bugs, encoding problems, better compability with browsers
+Note, if your request is very complex (consist with many params, special characters, etc), you may need to figure correct url-encoding for jsonData and endpoint parameters. I recommend to use HTML wrappers in this case.
+
+### Preferred way - less bugs, less encoding problems, better compability with browsers
 Using HTML wrapper - ui.html (handy UI, can be used for debugging) or read.html with test.swf, parameters are same:
 
 https://example.com/read.html?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
