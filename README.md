@@ -13,6 +13,7 @@ The .swf file take 3 required and 2 optional parameters:
 4) **ct** (optional) - specify your own Content-Type. Without this parameter it will be `application/json`
 5) **reqmethod** (optional) - specify your own request method. Without this parameter it will be `POST`
 
+### Old way
 Place test.swf and test.php on your host, then simply call the SWF file with the correct parameters.
 
 **(As mentioned by [@ziyaxanalbeniz](https://twitter.com/ziyaxanalbeniz)) - we actually don't need crossdomain.xml from this repo, if test.php and test.swf are on same domain). Place it on your host if you also testing locally or across different domains.**
@@ -24,7 +25,8 @@ http[s]://[yourhost-and-path]/test.swf?jsonData=[yourJSON]&php_url=http[s]://[yo
 e.g.
 https://example.com/test.swf?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
 
-Using HTML wrapper (**recommended way**) - read.html or ui.html with test.swf (if browser does not allow direct connection to .swf), parameters are same:
+### Preferred way - less bugs, encoding problems, better compability with browsers
+Using HTML wrapper (**recommended way**) - ui.html (can be used for debugging) or read.html with test.swf (if browser does not allow direct connection to .swf), parameters are same:
 
 https://example.com/read.html?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
 
