@@ -25,14 +25,14 @@ http[s]://[yourhost-and-path]/test.swf?jsonData=[yourJSON]&php_url=http[s]://[yo
 e.g.
 https://example.com/test.swf?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
 
-Note, if your request is very complex (consist with many params, special characters, etc), you may need to figure correct url-encoding for jsonData and endpoint parameters. I recommend to use HTML wrappers in this case.
+Note, if your request is very complex (consist with many params, special characters, etc), you may need to figure correct url-encoding for jsonData and endpoint parameters (Action Script code used in SWF doesn't implement URL encoding/decoding, this task is moved to the researcher's side). I recommend to use HTML wrappers in this case.
 
 ### Preferred way - less bugs, less encoding problems, better compability with browsers
 Using HTML wrapper - ui.html (handy UI, can be used for debugging) or read.html with test.swf, parameters are same:
 
 https://example.com/read.html?jsonData={"test":1}&php_url=https://example.com/test.php&endpoint=https://sometargethost.com/endpoint
 
-You can modify HTML/JS code in the wrappers for your needs (add encoding, etc).
+You can modify HTML/JS code in the wrappers for your needs (add encoding, etc) same as 307 redirect script.
 
 In case your target has crossdomain.xml misconfigured, or allowing your domain, you will also get the response using this wrapper. In this case you can use wrapper without 307 redirect (no need of `php_url` parameter).
 This is useful for Chrome >=62, where you can't access SWF directly, or if you want to exploit insecure crossdomain.xml. Note: if you are exploiting insecure crossdomain.xml, if the target site uses `https`, your origin should also use https for successful response reading.
