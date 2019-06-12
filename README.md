@@ -59,7 +59,7 @@ https://example.com/read.html?jsonData=somedata&endpoint=https://sometargethost.
 ```
 
 ## Updates
-Starting with Chrome 62, direct link to SWF file may not work. If this behavior happens, use HTML wrapper.
+Starting with Chrome 62, direct link to SWF file may not work. If this behavior happens, use HTML wrapper. Also it will require from the victim to click on the flash container first time to enable it, lowering impact due to the user interaction factor.
 
 **01.01.2018** - added HTML wrapper (`read.html`, should be used with `test.swf`) for better experience with Chrome. Usage and parameters are same as in case with test.swf. It supports also insecure crossdomain.xml exploitation (able to show the response from the target endpoint).
 
