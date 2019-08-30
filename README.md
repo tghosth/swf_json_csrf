@@ -12,7 +12,7 @@ Starting with Chrome 62, direct link to SWF file may not work. If this behavior 
 
 **July 2018** - Fixed in the Firefox: https://www.mozilla.org/en-US/security/advisories/mfsa2018-15/#CVE-2018-12364
 
-**August 2019** - Flash is disabled by default in latest Chrome 76 builds
+**August 2019** - Flash was disabled by default in latest Chrome 76 builds
 
 ## Variations of target configuration
 1) Target site has no crossdomain.xml, or secure crossdomain.xml, not allowing domains you can control. In this case you can't get the response from target site, but still can conduct CSRF attacks with arbitrary Content-Type header, if CSRF protection relies only on the content-type (e.g. checking it for being specific type). In this case usage of 307 redirect is required, to bypass crossdomain.xml (it will be requested only after the csrf will take place).
