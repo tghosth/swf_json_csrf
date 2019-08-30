@@ -69,6 +69,8 @@ Starting with Chrome 62, direct link to SWF file may not work. If this behavior 
 
 **July 2018** - Fixed in the Firefox: https://www.mozilla.org/en-US/security/advisories/mfsa2018-15/#CVE-2018-12364
 
+**August 2019** - Flash is disabled by default in latest Chrome 76 builds
+
 ## Cross Browser Testing
 
 This project is tested on following browsers as follows:
