@@ -1,6 +1,19 @@
 ## Purpose
 This repository was created to simplify the SWF-based JSON CSRF exploitation. It should work also with XML (and any other) data using optional parameters. Also it can be used for easy exploitation of crossdomain.xml misconfiguration (no need to compile .swf for each case).
 
+## Updates
+Starting with Chrome 62, direct link to SWF file may not work. If this behavior happens, use HTML wrapper. Also it will require from the victim to click on the flash container first time to enable it, lowering impact due to the user interaction factor.
+
+**01.01.2018** - added HTML wrapper (`read.html`, should be used with `test.swf`) for better experience with Chrome. Usage and parameters are same as in case with test.swf. It supports also insecure crossdomain.xml exploitation (able to show the response from the target endpoint).
+
+**25.03.2018** - added UI wrapper for better experience (`ui.html` + assets folder)
+
+![ui](https://user-images.githubusercontent.com/24297694/37878674-5c3af75a-3075-11e8-80d6-66e2dd4dee6f.JPG)
+
+**July 2018** - Fixed in the Firefox: https://www.mozilla.org/en-US/security/advisories/mfsa2018-15/#CVE-2018-12364
+
+**August 2019** - Flash is disabled by default in latest Chrome 76 builds
+
 ## Variations of target configuration
 1) Target site has no crossdomain.xml, or secure crossdomain.xml, not allowing domains you can control. In this case you can't get the response from target site, but still can conduct CSRF attacks with arbitrary Content-Type header, if CSRF protection relies only on the content-type (e.g. checking it for being specific type). In this case usage of 307 redirect is required, to bypass crossdomain.xml (it will be requested only after the csrf will take place).
 2) Target site has misconfigured crossdomain.xml, allowing domains you can control. In this case you can conduct both CSRF and response reading attacks. Usage of 307 redirect is not required.
@@ -58,18 +71,6 @@ https://example.com/read.html?jsonData=&endpoint=https://sometargethost.com/endp
 https://example.com/read.html?jsonData=somedata&endpoint=https://sometargethost.com/endpoint&ct=text/html
 ```
 
-## Updates
-Starting with Chrome 62, direct link to SWF file may not work. If this behavior happens, use HTML wrapper. Also it will require from the victim to click on the flash container first time to enable it, lowering impact due to the user interaction factor.
-
-**01.01.2018** - added HTML wrapper (`read.html`, should be used with `test.swf`) for better experience with Chrome. Usage and parameters are same as in case with test.swf. It supports also insecure crossdomain.xml exploitation (able to show the response from the target endpoint).
-
-**25.03.2018** - added UI wrapper for better experience (`ui.html` + assets folder)
-
-![ui](https://user-images.githubusercontent.com/24297694/37878674-5c3af75a-3075-11e8-80d6-66e2dd4dee6f.JPG)
-
-**July 2018** - Fixed in the Firefox: https://www.mozilla.org/en-US/security/advisories/mfsa2018-15/#CVE-2018-12364
-
-**August 2019** - Flash is disabled by default in latest Chrome 76 builds
 
 ## Cross Browser Testing
 
