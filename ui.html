@@ -71,8 +71,7 @@ $(function() {
 $( "#exec" ).click(function() {
 //remove all created elements from previous requests
 $( "embed" ).remove();
-//get URL and read parameters
-var url = new URL(window.location.href);
+// read parameters
 var e = encodeURIComponent(encodeURIComponent(document.getElementById("endpoint").value));
 var r = document.getElementById("reqm").value;
 var c = document.getElementById("ctype").value;
